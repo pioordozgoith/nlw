@@ -1,0 +1,44 @@
+/* o que é uma regra css? 
+seletor { 
+    propriedade:valor
+} 
+seletor {
+    propriedade: função(valor,valor,valor,valor) .pode ter so um valor. . valor pode se chamar argumento.
+}*/
+
+/*estilo pode ser  feito aqui no .css em forma de cascata
+(onde a regra escrita mais em baixo é a que sera usada)
+ou diretamente na <tag> no .html(forma mais forte)*/
+
+/* CUIDADO! cascata pode acontecer direto no <head> no .html*/
+
+/* usar # no seletor faz ele procurar uma <tag> com atributo id="" no .html
+e vai altera as regras do css apenas daquela <tag> expecifica */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  height: 100vh;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+input,
+button,
+textarea {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: "Nunito", sans-serif;
+
+  /* posso escrever separados ou agrupados */
+
+  font: 400 1.8rem/1 "nunito", sans-serif;
+}
